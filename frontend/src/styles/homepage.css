@@ -1,0 +1,188 @@
+/* Top Section */
+
+.top_section_container {
+  background-color: #f4f2f7;
+}
+
+.top_section_container > a > p {
+  padding: 25px 0px;
+  font-size: large;
+  font-weight: 700;
+}
+.top_section_container > img {
+  height: 280px;
+  width: 95%;
+  margin: auto;
+}
+
+/* Search section */
+.search_section_parent {
+  z-index: -100;
+}
+
+.search_section_container {
+  width: 80%;
+  /* height: 100px; */
+  margin: auto;
+  position: relative;
+  margin-top: -50px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  padding:30px 20px;
+  border-radius: 10px;
+  /* z-index: 0; */
+}
+
+/* Card Section */
+
+.CardSection_parent {
+  margin-top: 70px;
+}
+.CardSection_container {
+  width: 95%;
+  margin: auto;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.CardSection_container > div {
+  cursor: pointer;
+}
+.CardSection_container > div > img {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s;
+  border-radius: 50%;
+  padding-bottom: 10px;
+}
+.CardSection_container > div > img:hover {
+  transform: scale(1.1);
+}
+
+/* Magic card */
+
+.ReviewSection_parent{
+  width: 90%;
+  margin: auto;
+}
+.ReviewSection_container{
+  margin-top: 110px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+}
+
+.ReviewSection_card {
+  height: 300px;
+  background: #ffedfd;
+  overflow: visible;
+  box-shadow: 0 5px 20px 2px rgba(0,0,0,0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ 
+ .ReviewSection_card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 0 1rem;
+ }
+ 
+ .ReviewSection_card-img {
+  --size: 50%;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right, left; 
+  position: relative;
+  transition: all .3s ease-in-out;
+ }
+ 
+ .ReviewSection_card-img::before {
+  content: "";
+  border-radius: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+ }
+ 
+ /*Text*/
+ .ReviewSection_text-rating{
+  font-size: 20px;
+ }
+ 
+ .ReviewSection_text-body {
+  font-size: .8em;
+  text-align: center;
+  color: #6f6d78;
+  font-weight: 400;
+  font-style: italic;
+ }
+ 
+ /*Hover*/
+ .ReviewSection_card:hover .ReviewSection_card-img {
+  transform: scale(1);
+ }
+
+/* Media Query */
+
+@media all and (min-width: 485px) and (max-width: 1000px) {
+  .top_section_container > img {
+    height: 240px;
+  }
+  .CardSection_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .CardSection_container > div > img {
+    width: 70%;
+  }
+  .search_section_container{
+    grid-template-columns: repeat(3, 1fr);
+    padding:20px;
+  }
+  .ReviewSection_container{
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 100px;
+  }
+}
+
+@media all and (min-width: 200px) and (max-width: 485px) {
+  .top_section_container > img {
+    height: 200px;
+  }
+  .CardSection_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .CardSection_container > div > img {
+    width: 60%;
+  }
+  .search_section_container{
+    grid-template-columns: repeat(1, 1fr);
+    padding:30px;
+    border-radius: 20px;
+    gap: 10px;
+  }
+  .ReviewSection_container{
+    grid-template-columns: repeat(1,1fr);
+    row-gap: 100px;
+  }
+  .ReviewSection_parent{
+    width: 80%;
+  }
+}

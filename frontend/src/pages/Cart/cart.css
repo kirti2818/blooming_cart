@@ -1,0 +1,475 @@
+.emtyCartDataBelow {
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px; */
+    display: inline-block;
+    align-items: center;
+    font-family: Helvetica;
+    line-height: 22.88px;
+    text-align: left;
+    color: #757575;
+    color: #000000;
+    flex-basis: 25%;
+    line-height: 22.88px;
+    margin: 0px 0px 30px;
+    padding: 0px 10px;
+    text-align: left;
+}
+
+.maindivEmtyCartDataBelow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+
+}
+
+/* .maindivEmtyCartDataBelow div{
+    border: 1px solid black;
+} */
+
+
+.maindivEmtyCartDataBelow1 {
+    width: 70%;
+    margin: auto;
+}
+
+.maindivEmtyCartDataBelow1 h2 {
+    color: #000000;
+    font-family: LatoMedium;
+    font-size: 18.2857px;
+    font-weight: 700;
+    line-height: 27.4286px;
+    margin: 15px 0px;
+    text-align: -webkit-center
+}
+
+.continueShoppingButton {
+    align-items: center;
+    background-color: #1bc86d;
+    border-radius: 4px;
+    box-shadow: #000000 0px 3px 1px -2px;
+    color: #ffffff;
+    display: inline-flex;
+    font-family: Helvetica;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 28px;
+    padding: 10px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    margin-top: 8px;
+
+}
+
+.empty {
+    height: 8px;
+    background-color: #ececec;
+    box-shadow: #3b2151 0px 1px 3px 0px;
+    color: #000000;
+    line-height: 22.88px;
+    text-align: -webkit-center;
+}
+
+.maindivEmtyCartDataBelow1 h4 {
+    color: #757575;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 21.45px;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.name {
+    display: inline;
+    font-size: 17px;
+    line-height: 23.8px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 23.8px;
+    text-align: left;
+}
+
+.image {
+    width: 100%;
+    /* height: 400px; */
+    object-fit: contain;
+
+
+}
+
+.buttonDiv {
+    width: 90%;
+    margin: auto;
+}
+
+.shopingcartmain1 {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    /* border: 1px solid; */
+    margin-top: 100px;
+}
+
+@media (max-width: 1200px) {
+    .shopingcartmain1 {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+        /* border: 1px solid; */
+        margin-top: 100px;
+    }
+}
+
+.shopCart {
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+}
+
+.productsdiv {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: #b8b8b8 0px 2px 10px 0px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 22.88px;
+    margin: 0px 0px 30px;
+    padding: 15px 20px 10px;
+    
+}
+
+@media (max-width: 800px){
+    .productsdiv{
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px){
+    .productsdiv{
+        width: 60%;
+    }
+}
+
+
+
+/* .shopingcartmain1>div {
+    /* border: 1px solid; */
+/* } */
+.accordion {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+}
+
+.productCard {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: #b8b8b8 0px 2px 10px 0px;
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 22.88px;
+    margin: 0px 0px 30px;
+    padding: 15px 20px 10px
+}
+
+.prodcart img {
+    color: #0000ee;
+    display: inline;
+    line-height: 22.88px;
+    padding: 0px 0px 10px;
+    text-align: left;
+    width: 100px;
+    object-fit: contain;
+
+}
+
+.shopingcartmain2 {
+    display: flex;
+    gap: 30px;
+    border: 1px solid;
+}
+
+.shopingcartmain2>div {
+    width: 50%;
+    border: 1px solid;
+    padding: 15px;
+}
+
+.prodcart {
+    display: flex;
+    text-align: left;
+    gap: 10px;
+
+}
+@media (max-width: 800px){
+    .prodcart {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 10px;
+    
+    }
+}
+
+.buttonRemove :hover {
+    cursor: pointer;
+}
+
+.orderSummary {
+    text-align: left;
+    border: 1px solid;
+    padding: 10px;
+}
+
+.productsdiv h1 {
+    text-align: left;
+}
+
+.productItem {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 30px;
+    /* border: 1px solid; */
+
+}
+
+.buttonRemove img {
+    width: 15px;
+}
+
+@media (max-width: 1200px) {
+    .maindivEmtyCartDataBelow {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+
+    }
+
+    .maindivEmtyCartDataBelow1 {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .maindivEmtyCartDataBelow {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+
+    }
+
+    .maindivEmtyCartDataBelow1 {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 600px) {
+    .maindivEmtyCartDataBelow {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+
+    }
+
+    .maindivEmtyCartDataBelow1 {
+        width: 100%;
+        margin: auto;
+    }
+}
+@media (min-width: 200px) and (max-width: 450px){
+    .maindivEmtyCartDataBelow {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+}
+
+
+
+/* payments page 
+ */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.numbers {
+    background-color: #b026ff;
+    color: white;
+    border-radius: 100%;
+    width: 40px;
+}
+
+.underline {
+    border-bottom: 6px solid #b026ff;
+}
+
+.underline:hover {
+    cursor: pointer;
+}
+
+.navbarname {
+    display: flex;
+
+
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid rgb(200, 200, 200);
+}
+
+.navbar {
+    width: 100%;
+}
+
+.delInfo {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+}
+@media (max-width: 1100px) {
+    .delInfo {
+        width: 100%;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    }
+}
+.delInfo > div{
+    width: 50%;
+    /* padding: 10px; */
+}
+
+.address {
+    background-color: #ffffff;
+    border-color: #5f3c86;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: #b8b8b8 0px 2px 10px 0px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 22.88px;
+    margin: 0px 0px 30px;
+    padding: 15px 20px 10px;
+    text-align: left;
+    font-weight: bold;
+
+}
+.address div{
+    margin-top: 4px;
+}
+
+.address input {
+    border: 1px solid grey;
+    padding: 5px;
+    margin-top: 8px;
+    /* width: 100%; */
+}
+.inputtags{
+    display: flex;
+    flex-direction: column;
+
+}
+.inputtags input{
+    border: 1px solid grey;
+    padding: 5px;
+    margin-top: 8px;
+    width: 100%;
+}
+.input {
+    width: 30%;
+
+}
+.method{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.method div{
+    border: 1px solid black;
+    padding: 8px;
+}
+
+@media (max-width: 700px){
+    .method{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+}
+.nameOfUser {
+    background-color: #ffffff;
+    border-color: #5f3c86;
+    border-radius: 0px 0px 8px 8px;
+    border-style: solid;
+    border-width: 2px 1px 1px;
+    color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 22.88px;
+    margin: 25px 0px;
+    padding: 5px 10px 7px
+}
+
+.accordionDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordionDiv div{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+@media (max-width: 800px){
+    .inputtags input{
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 700px){
+    .inputtags input{
+        width: 50%;
+    }
+
+}
